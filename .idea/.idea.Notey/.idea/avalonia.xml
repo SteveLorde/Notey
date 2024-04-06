@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="QuickNoteBook/App.axaml" value="QuickNoteBook/QuickNoteBook.csproj" />
+        <entry key="QuickNoteBook/Views/MainWindow.axaml" value="QuickNoteBook/QuickNoteBook.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
