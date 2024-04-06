@@ -18,9 +18,9 @@ class PagesRepo : IPagesRepo
         return await _db.Pages.ToListAsync();
     }
 
-    public async Task GetPage(int pageid)
+    public async Task<Page> GetPage(int pageid)
     {
-        throw new System.NotImplementedException();
+        return await _db.Pages.FirstAsync(page => page.Id == pageid);
     }
 
     public async Task AddPage()

@@ -5,6 +5,7 @@
       <map>
         <entry key="Notey.App/App.axaml" value="Notey.App/Notey.App.csproj" />
         <entry key="Notey.App/Views/MainWindow.axaml" value="Notey.App/Notey.App.csproj" />
+        <entry key="Notey.App/Views/SettingsPage.axaml" value="Notey.App/Notey.App.csproj" />
         <entry key="QuickNoteBook/App.axaml" value="QuickNoteBook/QuickNoteBook.csproj" />
         <entry key="QuickNoteBook/Views/MainWindow.axaml" value="QuickNoteBook/QuickNoteBook.csproj" />
       </map>
