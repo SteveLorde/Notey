@@ -14,7 +14,7 @@ public class MainWindowViewModel : ViewModelBase
     public MainWindowViewModel(IPagesRepo pagesRepo, AppState appState)
     {
         _pagesRepo = pagesRepo;
-        GetPageData(appState.CurrentPageNumber);
+        //GetPageData(appState.CurrentPageNumber);
     }
     public string Greeting => "Welcome to Avalonia!";
 

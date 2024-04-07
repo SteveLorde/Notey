@@ -6,16 +6,26 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Notey.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
+        Background="White"
         Icon="/Assets/avalonia-logo.ico"
         Title="Notey.App">
     
-        <StackPanel Orientation="Vertical">
-            <StackPanel Orientation="Horizontal">
+    
+    
+    <StackPanel Orientation="Vertical">
+            <Panel>
                 <StackPanel Orientation="Vertical">
-                    <TextBox Text="{Binding Page.Title}"></TextBox>
-                    <TextBox Text="{Binding Page.Body}"></TextBox>
+                    <TextBox Watermark="Insert Title..." BorderThickness="0" Background="White" Text="{Binding Page.Title}"></TextBox>
+                    <TextBox Watermark="Type..." BorderThickness="0" Background="White" Text="{Binding Page.Body}"></TextBox>
                 </StackPanel>
+            </Panel>
+            
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Content="Previous Page"></Button>
+                <Button Content="Next Page"></Button>
             </StackPanel>
+            
         </StackPanel>
+        
     
 </Window>
