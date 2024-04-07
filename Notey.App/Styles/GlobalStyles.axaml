@@ -1,0 +1,19 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <!-- Add Styles Here -->
+    <Style Selector="TextBox.NoteTitle">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+    <Style Selector="TextBox.NoteBody">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+    <Style Selector="Button.NavigatePageButton">
+        <Setter Property="Foreground" Value="Black" />
+    </Style>
+</Styles>

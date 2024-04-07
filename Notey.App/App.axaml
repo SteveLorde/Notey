@@ -10,7 +10,7 @@
     </Application.DataTemplates>
   
     <Application.Styles>
-        <StyleInclude Source="Styles/Styles.axaml"></StyleInclude>
+        <StyleInclude Source="Styles/GlobalStyles.axaml"></StyleInclude>
         <FluentTheme />
     </Application.Styles>
 </Application>
