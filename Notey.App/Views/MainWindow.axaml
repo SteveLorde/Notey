@@ -6,26 +6,49 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Notey.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Background="White"
+        Background="Transparent"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Notey.App">
+        Title="Notey.App"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="False"
+        >
     
-    
-    
-    <StackPanel Orientation="Vertical">
-            <Panel>
+        <StackPanel Orientation="Vertical">
+            <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                <ExperimentalAcrylicBorder.Material >
+                    <ExperimentalAcrylicMaterial BackgroundSource="Digger" TintColor="Black" TintOpacity="1" MaterialOpacity="0.65"></ExperimentalAcrylicMaterial>
+                </ExperimentalAcrylicBorder.Material>
+            </ExperimentalAcrylicBorder>
+            
+            <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition MinWidth="500"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Classes="MenuButton" Grid.Column="0" HorizontalAlignment="Center">
+                        <Button.Content>
+                            <Image MaxWidth="35" MaxHeight="35" Source="{SvgImage ../Assets/MobileMenuIcon.svg}"></Image>
+                        </Button.Content>
+                    </Button>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="Notey" Foreground="White" FontWeight="Heavy" FontSize="24"></TextBlock>
+                </Grid>
+            </DockPanel>
+            
+            <Panel Classes="NotepadArea">
                 <StackPanel Orientation="Vertical">
-                    <TextBox Watermark="Insert Title..." BorderThickness="0" Background="White" Text="{Binding Page.Title}"></TextBox>
-                    <TextBox Watermark="Type..." BorderThickness="0" Background="White" Text="{Binding Page.Body}"></TextBox>
+                    <TextBox Classes="NoteTitle" Watermark="Insert Title..." BorderThickness="0" Background="Transparent" Text="{Binding Page.Title}"></TextBox>
+                    <TextBox Classes="NoteBody" Watermark="Type..." BorderThickness="0" Background="Transparent" Text="{Binding Page.Body}"></TextBox>
                 </StackPanel>
             </Panel>
-            
+
+                
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button Content="Previous Page"></Button>
-                <Button Content="Next Page"></Button>
+                <Button Classes="NavigatePageButton" Content="Previous Page"></Button>
+                <Button Classes="NavigatePageButton" Content="Next Page"></Button>
             </StackPanel>
-            
+                
         </StackPanel>
-        
     
 </Window>

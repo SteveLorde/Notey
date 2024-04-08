@@ -7,13 +7,30 @@
     </Design.PreviewWith>
 
     <!-- Add Styles Here -->
+    <Style Selector="Button.MenuButton">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="CornerRadius" Value="15"></Setter>
+    </Style>
+    
     <Style Selector="TextBox.NoteTitle">
+        <Setter Property="Margin" Value="0,0,0,10"></Setter>
         <Setter Property="Foreground" Value="Black"/>
     </Style>
+    
+    <Style Selector="Panel.NotepadArea">
+        <Setter Property="Background" Value="White"></Setter>
+    </Style>
+    
     <Style Selector="TextBox.NoteBody">
         <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="MinHeight" Value="200"></Setter>
     </Style>
+    
     <Style Selector="Button.NavigatePageButton">
-        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+    
+    <Style Selector="Button.NavigatePageButton:pointerover">
+        <Setter Property="Foreground" Value="White" />
     </Style>
 </Styles>

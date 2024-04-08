@@ -9,4 +9,9 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
+    public async void ButtonTest()
+    {
+        
+    }
 }
